@@ -1,0 +1,45 @@
+body {
+    font-family: "Merriweather", serif;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #00274C;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFCB05;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .sidenav a:hover {
+    color: #2F65A7;
+  }
+
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    color: #131516;
+  }
+
+  .main topLine {
+    font-size: 38px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
