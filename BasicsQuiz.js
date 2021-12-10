@@ -35,6 +35,8 @@ function checkAns()
   let question2 = [];
   const question2Ans = ["1", "2", "3", "4", "5"]
   //let question3 = [];
+  var question4 = document.quiz.question4.value;
+  var question5 = document.quiz.question5.value;
   var correct = 0;
 
   
@@ -94,6 +96,24 @@ function checkAns()
   else
   {
     document.getElementById("incorrectBadTraits").innerHTML = "Incorrect!";
+  }
+
+  if(question4 == "True")
+  {
+    document.getElementById("correctTF2").innerHTML = "Correct!";
+  }
+  else
+  {
+    document.getElementById("incorrectTF2").innerHTML = "Incorrect!";
+  }
+
+  if(question5 == "Test")
+  {
+    document.getElementById("correctScenario").innerHTML = "Correct!";
+  }
+  else
+  {
+    document.getElementById("incorrectScenario").innerHTML = "Incorrect!";
   }
 }
 

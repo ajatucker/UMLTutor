@@ -29,7 +29,7 @@ cursor: pointer;
   cursor: pointer;
 }
 
-.pagination b{
+.pagination a{
   float:left;
   color: #00274C;
   padding: 8px 16px;
@@ -40,12 +40,12 @@ cursor: pointer;
   font-family: "Montserrat", sans-serif;
 }
 
-.pagination b.active {
+.pagination a.active {
   background-color: #A5A508;
   color: #fff;
 }
 
-.pagination b:hover:not(.active) {
+.pagination a:hover:not(.active) {
   background-color: 	#75988d;
   color: #fff;
 }
