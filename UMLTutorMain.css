@@ -2,6 +2,27 @@ body {
   font-family: "Merriweather", serif;
 }
 
+.overlayIcon{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 10px;
+}
+
+.icon:hover + .hide{
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  display:block;
+}
+
+.hide{
+  display:none;
+}
+
 .button{
   background-color: #00B2A9; 
 border: none;

@@ -26,19 +26,25 @@
 
   <div class="main">
     <topLine href="#UMLTutor"><center>Basics Quiz</center></topLine><br>
+    <p> Answer the questions to the best of your ability. Below, you'll see two true or false questions,
+        a matching question, a question to choose traits of a bad class diagram, and a scenario.
+    </p>
   </div>
 
   <form id="quiz" name = "quiz">
-    <p>T/F</p>
+    <p>1. Class diagrams should be created before use cases are considered.</p>
    <input type="radio" id="tfBasic" name="question1" value="True"> True<br>
    <input type="radio" id="tfBasic" name="question1" value="False"> False <br>
     
   <p id="correctTF" name = "correctTF"></p>
   <p id="incorrectTF" name = "incorrectTF"></p>
     
-  <p>Matching</p>
-  <p>Test  Bank  Match Random  Words</p>
-  <p>Together And Phrases For Answer</p>
+  <p>2. Match the words below. The words below represent 5 methods, and 5 classes that should be matched
+      together based on what you know. Please answer with the format "Class Method" or else your answer
+      may be marked incorrectly.
+  </p>
+  <p>Camera Bank Search Light </p>
+  <p>CheckBalance TakePhoto List Turnon Answer</p>
   1<input id="textbox" type="text" name="question2one"><br><br>
   2<input id="textbox" type="text" name="question2two"><br><br>
   3<input id="textbox" type="text" name="question2three"><br><br>
@@ -48,25 +54,25 @@
   <p id="correctMatch"></p>
     <p id="incorrectMatch"></p>
 
-    <p>Bad Traits</p>
+    <p>3. Choose the traits present that are bad practice in a class diagram.</p>
 
-    <label class="container">1
+    <label class="container">Every class has a specific job
       <input type="checkbox" name = "question3" id="badTraitsBasic" value="1">
       <span class="checkmark"></span>
     </label>
-    <label class="container">2
+    <label class="container">Class variables are private
       <input type="checkbox" name = "question3" id="badTraitsBasic" value="2">
       <span class="checkmark"></span>
     </label>
-    <label class="container">3
+    <label class="container">Each class has unique attributes
       <input type="checkbox" name = "question3" id="badTraitsBasic" value="3">
       <span class="checkmark"></span>
     </label>
-    <label class="container">4
+    <label class="container">Repeating attributes in several class
       <input type="checkbox"  name = "question3" id="badTraitsBasic" value="4">
       <span class="checkmark"></span>
     </label>
-    <label class="container">5
+    <label class="container">Every class connecting
       <input type="checkbox" name = "question3" id="badTraitsBasic" value="5">
       <span class="checkmark"></span>
     </label>
@@ -74,7 +80,7 @@
     <p id="correctBadTraits"></p>
     <p id="incorrectBadTraits"></p>
 
-    <p>T/F</p>
+    <p>4. All nouns and verbs will be used from your use cases.</p>
    <input type="radio" id="tfBasic" name="question4" value="True"> True<br>
    <input type="radio" id="tfBasic" name="question4" value="False"> False <br>
 
@@ -88,14 +94,14 @@
     <p id="incorrectScenario"></p>
 
   <br><br>
-  <center><input class="button button4" id= "checkBtn" value= "Check" onclick="checkAns();"></center>
+  <center><input class="button button4" id= "checkBtn" value="Check" onclick="checkAns();"></center>
   <br><br><br>
   </form>
 
   <div class="pagination" id="foot">
-    <a>&laquo;</a>
-    <a>Class Diagram Basics</a>
-    <a href="">Class Diagram Symbols</a>
+    <a href="ClassDiagramSymbols.html">&laquo;</a>
+    <a href="UMLClassDiagram.html">Class Diagram Basics</a>
+    <a href="ClassDiagramSymbols.html">Class Diagram Symbols</a>
     <a class="active" href="">Class Diagram Quiz</a>
     <a >&raquo;</a>
   </div>

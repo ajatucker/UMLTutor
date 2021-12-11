@@ -41,20 +41,63 @@
         be necessary and useful for your actual class diagram is what you want to know.
         Well, firstly, you need to develop your use cases! If you're unfamiliar with use cases, see our
         section on use cases for an overview, but briefly, use cases are simply the ways a user will use
-        your system.
+        your system. 
+        A simple rule to remember for classes: find the nouns and verbs. In any scenario in software
+        development, you're going to have user scenarios that have nouns and verbs. The nouns will
+        represent classes as they can be turned into objects (hence noun), and the verbs are the methods
+        of your class because they are doing something. Think about your search function in your list class;
+        it searches your list when called. Now, you just have to apply that to making a class. 
+        Note: the nouns and verbs rule is general, but sometimes your noun should be an attribute of your class.
+        A common example used for introducing class diagramming is the pizza shop example.
     </p>
-    <center><img src="pexels-jorge-fakhouri-filho-2531110.jpg" ></center>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <br><br><br>
-  </div>
+    <p>The Pizza Order Example</p>
+    <img src="pexels-jorge-fakhouri-filho-2531110.jpg" height="300" width="200" align="left" >
+    <p align="center">
+        A pizza restaurant chain wants to set up an online ordering system. They want the customer to be able
+        to order a pizza online with their payment information and address. The customer should also
+        be able to choose their pizza toppings and size. This order should be sent back to the
+        specific restaurant the customer ordered from, and the customer should receive the cost of
+        their order.
+    </p>
+    <p align="center">
+        You should be able to identify several nouns: pizza chain, order, customer, pizza,
+        address, payment, toppings, size, and cost.
+        There should also be a few verbs chosen: choose, ordered, receive
 
+        This should be a good basis for a class diagram. Try it out for yourself before looking at our
+        diagram below!
+        
+        The "+" is to show public attributes and "-" stands for private attributes. There's another symbol "#" that stands for protected members, but that is used less often.
+        Again, note that the class system above is not necessarily a "correct" class diagram. There are a lot
+        of ways to design a system, but we're just trying to get you to think about designing a system
+        within the context of a Class Diagram. This is just a simple interpretation of this particular system.
+        The top of our "class box" should have the name of the class in it.
+    </p>
+    <br><br><br>
+    <topLine><center>The Pizza Order Example Class Diagram</center></topLine><br>
+    <center><div class="overlayIcon"><img src="PizzaOrderSystem.jpg">
+        
+        <div class="icon">
+            <img src="magnifying-glass-icon.jpg">
+        </div>
+        <div class="hide">
+            <p>We didn't use receive based on our simple interpretation. An important thing to learn
+                about using the nouns and verbs method is that NOT all verbs or nouns will actually be
+                useful to us. If we added a cashier class in that printed a receipt for a driver to bring
+                to the customer, receive could become more relevant.
+            </p>
+        </div>
+    </div>
+</div>
+    </center>
+  </div>
+  <br><br><br><br><br><br>
   <div class="pagination" id="foot">
     <a>&laquo;</a>
     <a class="active" >Class Diagram Basics</a>
-    <a href="">Class Diagram Symbols</a>
-    <a href="">Class Diagram Quiz</a>
-    <a href="">&raquo;</a>
+    <a href="ClassDiagramSymbols.html">Class Diagram Symbols</a>
+    <a href="ClassQuiz.html">Class Diagram Quiz</a>
+    <a href="ClassDiagramSymbols.html">&raquo;</a>
   </div>
   </body>
   </html> 

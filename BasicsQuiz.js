@@ -33,8 +33,7 @@ function checkAns()
 {
   var question1 = document.quiz.question1.value;
   let question2 = [];
-  const question2Ans = ["1", "2", "3", "4", "5"]
-  //let question3 = [];
+  const question2Ans = ["1", "2", "3", "4", "5"];
   var question4 = document.quiz.question4.value;
   var question5 = document.quiz.question5.value;
   var correct = 0;
