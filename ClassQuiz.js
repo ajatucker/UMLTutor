@@ -1,8 +1,16 @@
+
+/*
+function reveal()
+{
+    document.getElementById("reveal").style.display = "block";
+}
+*/
+
 function checkAns()
 {
   var question1 = document.quiz.question1.value;
   let question2 = [];
-  const question2Ans = ["1", "2", "3", "4", "5"]
+  const question2Ans = ["Camera TakePhoto", "Bank CheckBalance", "List Search", "Light Turnon", "Quiz Check"]
   //let question3 = [];
   var question4 = document.quiz.question4.value;
   var question5 = document.quiz.question5.value;
@@ -26,7 +34,7 @@ function checkAns()
   //var question2 = document.quiz.question2.value;
   //var question3 = document.quiz.question3.value;
 
-  if(question1 == "True")
+  if(question1 == "False")
   {
     document.getElementById("correctTF").innerHTML = "Correct!";
   }
@@ -67,7 +75,7 @@ function checkAns()
     document.getElementById("incorrectBadTraits").innerHTML = "Incorrect!";
   }
 
-  if(question4 == "True")
+  if(question4 == "False")
   {
     document.getElementById("correctTF2").innerHTML = "Correct!";
   }
@@ -76,7 +84,7 @@ function checkAns()
     document.getElementById("incorrectTF2").innerHTML = "Incorrect!";
   }
 
-  if(question5 == "Test")
+  if(question5 == "receipt")
   {
     document.getElementById("correctScenario").innerHTML = "Correct!";
   }
@@ -85,3 +93,18 @@ function checkAns()
     document.getElementById("incorrectScenario").innerHTML = "Incorrect!";
   }
 }
+/*
+:hover + .hide{
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  display:block;
+}
+
+.hide{
+  display:none;
+}
+*/

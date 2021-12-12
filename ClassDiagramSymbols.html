@@ -33,19 +33,47 @@
         are the most commonly used. 
     </p>
     <p>
-        Inheritance
-        There are 
+        Generalization
+    </p>
+    <p>
+        The generalization arrow is used to represent inheritance. It typically starts from the child class 
+        and points at the parent class. There can be multiple children for a parent class. To make it easier
+        to identify an inheritance relationship between classes, think about the phrase "is a". For example, 
+        a tiger "is a" cat, so tiger would be a child class of cat. 
     </p>
     <p>
         Aggregation
+    </p>
+    <p>
+        The following arrows can be a bit trickier, but have no fear. Don't get confused by the what the word 
+        aggregate means. We refer to aggregation relationships in UML as being "owns a" where the diamond 
+        starts at the owning class, and the arrow points to the owned class. An example would be a bank account 
+        class where the account "owns a" credit card. 
     </p>
     <img src="ClassSymbolsIcon.jpg">
     <p>
         Association
     </p>
     <p>
+        Association relationships are just to add to an existing relationship between two classes. 
+        This means that this third class is just to add more information to their connection. A good example 
+        would be to go back to our pizza order system, and we could add an association class called "cashier"
+        this could be a handler that also prints a receipt based on the information between the two classes. 
+    </p>
+    <p>
         Composition
     </p>
+    <p>
+        A composition class is simply a class that is made up of another class of objects. A simple example
+        would be a room class that is made up of a wall, a floor, and a ceiling class. The filled in 
+        diamond begins at the class that is made of the arrow pointing class.
+    </p>
+    <p>Dependency</p>
+    <p>
+        There are many different types of dependencies, so we'll just cover a common dependency class.
+        A common one is "realizes" or realization class, which represents an interface of some kind.
+    </p>
+    <br><br><br><br>
     </div>
   <div class="pagination" id="foot">
     <a href="UMLClassDiagram.html">&laquo;</a>
