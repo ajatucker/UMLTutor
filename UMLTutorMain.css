@@ -135,7 +135,7 @@ cursor: pointer;
 /* Sidenav is just for the sidebar*/
 .sidenav {
   height: 100%;
-  width: 12.5%;
+  width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
