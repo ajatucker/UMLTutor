@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>UML Tutor</title>
+     <link rel="stylesheet" href="UMLTutorMain.css">
+     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+     <script src="ActivityQuiz.js"></script>
+</head>
+<body>
+
+     <div class="sidenav">
+          <a href="UMLTutorMainMenu.html">Home</a>
+          <a href="UMLTutorBasics.html">UML Basics</a>
+          <a href="UMLClassDiagram.html">Class Diagram</a>
+          <a href="#use case">Use Case Diagram</a>
+          <a href="#statechart">Statechart Diagram</a>
+          <a href="UMLActivityDiagram.html">Activity Diagram</a>
+          <a href="#sequence">Sequence Diagram</a>
+          <a href="#communication">Communication Diagram</a>
+          <a href="#deployment">Deployment Diagram</a>
+          <a href="UMLHelp.html">Need Help?</a>
+     </div>
+
+     <div class="main">
+          <topLine href="#UMLTutor"><center>Basics Quiz</center></topLine><br>
+          <p>
+               Answer the questions to the best of your ability. Below, you'll see two true or false questions,
+               a matching question, a question to choose traits of a bad class diagram, and a scenario.
+
+               <br><b>(I totally just copied and pasted the Class Quiz page as a placeholder for now.)</b>
+          </p>
+     </div>
+
+     <form id="quiz" name="quiz">
+          <p>1. Class diagrams should be created before use cases are considered.</p>
+          <input type="radio" id="tfBasic" name="question1" value="True"> True<br>
+          <input type="radio" id="tfBasic" name="question1" value="False"> False <br>
+
+          <p id="correctTF" name="correctTF"></p>
+          <p id="incorrectTF" name="incorrectTF"></p>
+
+          <p>
+               2. Match the words below. The words below represent 5 methods, and 5 classes that should be matched
+               together based on what you know. Please answer with the format "Class Method" or else your answer
+               may be marked incorrectly.
+          </p>
+          <p>Camera Bank Search Light Quiz</p>
+          <p>CheckBalance TakePhoto List Turnon Check</p>
+          1<input id="textbox" type="text" name="question2one"><br><br>
+          2<input id="textbox" type="text" name="question2two"><br><br>
+          3<input id="textbox" type="text" name="question2three"><br><br>
+          4<input id="textbox" type="text" name="question2four"><br><br>
+          5<input id="textbox" type="text" name="question2five"><br><br>
+
+          <p id="correctMatch"></p>
+          <p id="incorrectMatch"></p>
+
+          <p>3. Choose the traits present that are bad practice in a class diagram.</p>
+
+          <label class="container">
+               Every class has a specific job
+               <input type="checkbox" name="question3" id="badTraitsBasic" value="1">
+               <span class="checkmark"></span>
+          </label>
+          <label class="container">
+               Class variables are private
+               <input type="checkbox" name="question3" id="badTraitsBasic" value="2">
+               <span class="checkmark"></span>
+          </label>
+          <label class="container">
+               Each class has unique attributes
+               <input type="checkbox" name="question3" id="badTraitsBasic" value="3">
+               <span class="checkmark"></span>
+          </label>
+          <label class="container">
+               Repeating attributes in several class
+               <input type="checkbox" name="question3" id="badTraitsBasic" value="4">
+               <span class="checkmark"></span>
+          </label>
+          <label class="container">
+               Every class connecting
+               <input type="checkbox" name="question3" id="badTraitsBasic" value="5">
+               <span class="checkmark"></span>
+          </label>
+
+          <p id="correctBadTraits"></p>
+          <p id="incorrectBadTraits"></p>
+
+          <p>4. All nouns and verbs will be used from your use cases.</p>
+          <input type="radio" id="tfBasic" name="question4" value="True"> True<br>
+          <input type="radio" id="tfBasic" name="question4" value="False"> False <br>
+
+          <p id="correctTF2" name="correctTF2"></p>
+          <p id="incorrectTF2" name="incorrectTF2"></p>
+
+          <p>
+               5. Your client wants you to add a component into their online store. They are requesting customers
+               receive receipts in their email as customers were complaining they weren't getting them before.
+               You being a new developer in the system and not being familiar with the system; what class would
+               you create given the information?
+          </p>
+          <input id="textbox" type="text" name="question5"><br><br>
+
+          <p id="correctScenario"></p>
+          <p id="incorrectScenario"></p>
+
+          <br><br>
+          <center><input class="button button4" id="checkBtn" value="Check" onclick="checkAns();"></center>
+          <br><br><br>
+     </form>
+
+     <div class="pagination" id="foot">
+          <a href="ActivityDiagramSymbols.html">&laquo;</a>
+          <a href="UMLActivityDiagram.html">Activity Diagram Basics</a>
+          <a href="ActivityDiagramSymbols.html">Activity Diagram Symbols</a>
+          <a class="active" href="">Activity Diagram Quiz</a>
+          <a>&raquo;</a>
+     </div>
+</body>
+</html> 
