@@ -4,13 +4,14 @@ body {
 
 .contain {
   position: relative;
-  width: 100%;
   max-width: 400px;
   cursor:pointer;
 }
 
 .image {
   display: block;
+  
+  padding:0px 0px;
 }
 
 .overlay {
@@ -31,12 +32,12 @@ body {
 
 .icon {
   color: white;
-  font-size: 100px;
+  font-size: 150px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-550%, -1400%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(-115px, -300px);
+  -ms-transform: translate(0px, 50px);
   text-align: center;
 }
 
@@ -45,8 +46,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(-115px, -300px);
+  -ms-transform: translate(0px, 50px);
+  border-radius: 6px;
+  padding: 5px 0px;
   text-align: center;
   background-color: #A5A508;
   color:white;
@@ -58,9 +61,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.fa-user:hover {
-  color: #eee;
-}
+
 
 
 
@@ -79,6 +80,7 @@ box-shadow: 0 9px #999;
 cursor: pointer;
 }
 
+/* styling buttons */
 .button4 {border-radius: 8px;}
 
 .pagination {
