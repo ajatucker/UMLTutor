@@ -2,6 +2,7 @@ body {
   font-family: "Merriweather", serif;
 }
 
+/* the container for the icon */
 .contain {
   position: relative;
   max-width: 400px;
@@ -14,6 +15,7 @@ body {
   padding:0px 0px;
 }
 
+/* overlay for icon */
 .overlay {
   position: absolute;
   top: 0;
@@ -26,10 +28,12 @@ body {
   transition: .3s ease;
 }
 
+/* */
 .contain .overlay {
   opacity: 1;
 }
 
+/* move icon */
 .icon {
   color: white;
   font-size: 150px;
@@ -41,6 +45,7 @@ body {
   text-align: center;
 }
 
+/* used to display hidden text when icon is hovered*/ 
 .overlay:hover + .hide{
   color: black;
   position: absolute;
@@ -56,15 +61,13 @@ body {
   display:block;
 }
 
+/* used to display hidden text */
 .hide{
   display:none;
   font-family: "Montserrat", sans-serif;
 }
 
-
-
-
-
+/* custom button */
 .button{
   background-color: #00B2A9; 
 border: none;

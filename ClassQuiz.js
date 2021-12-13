@@ -40,7 +40,7 @@ function checkAns()
   }
   else
   {
-    document.getElementById("incorrectTF").innerHTML = "Incorrect!";
+    document.getElementById("incorrectTF").innerHTML = "Incorrect! User stories should be created first because they help define what needs to be built for the system along with requirements";
   }
 
   for(var i = 0; i < question2.length; i++)
@@ -58,7 +58,7 @@ function checkAns()
   }
   else
   {
-    document.getElementById("incorrectMatch").innerHTML = "Incorrect!";
+    document.getElementById("incorrectMatch").innerHTML = "Incorrect! Remember, objects and classes are things, and methods are what is done to them. ";
   }
 
   const question3 = document.querySelectorAll('input[name="question3"]:checked');
@@ -72,7 +72,7 @@ function checkAns()
   }
   else
   {
-    document.getElementById("incorrectBadTraits").innerHTML = "Incorrect!";
+    document.getElementById("incorrectBadTraits").innerHTML = "Incorrect! Remember, every class should be well defined, and this includes limiting links to other classes.";
   }
 
   if(question4 == "False")
@@ -81,7 +81,7 @@ function checkAns()
   }
   else
   {
-    document.getElementById("incorrectTF2").innerHTML = "Incorrect!";
+    document.getElementById("incorrectTF2").innerHTML = "Incorrect! Remember, some words will be used as attributes of your class.";
   }
 
   if(question5 == "receipt")
@@ -90,7 +90,7 @@ function checkAns()
   }
   else
   {
-    document.getElementById("incorrectScenario").innerHTML = "Incorrect!";
+    document.getElementById("incorrectScenario").innerHTML = "Incorrect! Think about what the client wants added.";
   }
 }
 /*
