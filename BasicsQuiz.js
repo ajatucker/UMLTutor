@@ -65,11 +65,14 @@ function checkAns()
     document.getElementById("incorrectTF").innerHTML = "Incorrect!";
   }
 
-  for(var i = 0; i < question2.length; i++)
+  for(var j=0; j<question2Ans.length;j++)
   {
-    if(question2[i] == question2Ans[i])
+      for(var i = 0; i < question2.length; i++)
     {
-      correct++;
+      if(question2[i] == question2Ans[j])
+      {
+        correct++;
+      }
     }
   }
   //var checkArr = false;
