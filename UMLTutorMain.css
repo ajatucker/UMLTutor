@@ -1,5 +1,8 @@
 body {
   font-family: "Merriweather", serif;
+  padding-left: 3%;
+  padding-right: 3%;
+  height: 100%;
 }
 
 .contain {
@@ -117,10 +120,19 @@ cursor: pointer;
   color: #fff;
 }
 
+/*Show image and text paragraph next to each other*/
+.sidebyside {
+     display: inline-block;
+     width: 40%;
+     height: 30%;
+     padding-right: 0%;
+     padding-left: 2%;
+}
+
 /* Sidenav is just for the sidebar*/
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 12.5%;
   position: fixed;
   z-index: 1;
   top: 0;
