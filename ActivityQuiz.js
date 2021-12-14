@@ -10,7 +10,7 @@ function checkAns()
 {
   var question1 = document.quiz.question1.value;
   let question2 = [];
-  const question2Ans = ["Camera TakePhoto", "Bank CheckBalance", "List Search", "Light Turnon", "Quiz Check"]
+  const question2Ans = ["Decision node", "Fork", "Join", "Swimlanes", "Initial node"]
   //let question3 = [];
   var question4 = document.quiz.question4.value;
   var question5 = document.quiz.question5.value;
@@ -34,12 +34,14 @@ function checkAns()
   //var question2 = document.quiz.question2.value;
   //var question3 = document.quiz.question3.value;
 
-  if(question1 == "False")
+  if(question1 == "True")
   {
     document.getElementById("correctTF").innerHTML = "Correct!";
+    document.getElementById("incorrectTF").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctTF").innerHTML = "";
     document.getElementById("incorrectTF").innerHTML = "Incorrect!";
   }
 
@@ -58,9 +60,11 @@ function checkAns()
   if(correct == 5)
   {
     document.getElementById("correctMatch").innerHTML = "Correct!";
+    document.getElementById("incorrectMatch").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctMatch").innerHTML = "";
     document.getElementById("incorrectMatch").innerHTML = "Incorrect!";
   }
 
@@ -69,45 +73,36 @@ function checkAns()
   question3.forEach((checkbox) => {
     userAns3.push(checkbox.value);
     });
-  if(userAns3[0] == "4" && userAns3[1] == "5")
+  if(userAns3[0] == "1" && userAns3[1] == "3")
   {
     document.getElementById("correctBadTraits").innerHTML = "Correct!";
+    document.getElementById("incorrectBadTraits").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctBadTraits").innerHTML = "";
     document.getElementById("incorrectBadTraits").innerHTML = "Incorrect!";
   }
 
   if(question4 == "False")
   {
     document.getElementById("correctTF2").innerHTML = "Correct!";
+    document.getElementById("incorrectTF2").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctTF2").innerHTML = "";
     document.getElementById("incorrectTF2").innerHTML = "Incorrect!";
   }
 
-  if(question5 == "receipt")
+  if(question5 == "")
   {
-    document.getElementById("correctScenario").innerHTML = "Correct!";
+    document.getElementById("correctScenario").innerHTML = "";
+    document.getElementById("incorrectScenario").innerHTML = "Incorrect! Please answer, this is up to your own creativity!";
   }
   else
   {
-    document.getElementById("incorrectScenario").innerHTML = "Incorrect!";
+    document.getElementById("correctScenario").innerHTML = "Correct!";
+    document.getElementById("incorrectScenario").innerHTML = "";
   }
 }
-/*
-:hover + .hide{
-  color: black;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  transform: translate(0%, 0%);
-  -ms-transform: translate(0%, 0%);
-  display:block;
-}
-
-.hide{
-  display:none;
-}
-*/

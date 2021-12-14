@@ -30,12 +30,12 @@
                Answer the questions to the best of your ability. Below, you'll see two true or false questions,
                a matching question, a question to choose traits of a bad class diagram, and a scenario.
 
-               <br ><b>(I totally just copied and pasted the Class Quiz page as a placeholder for now.)</b>
+               <br>
           </p>
      </div>
 
      <form id="quiz" name="quiz">
-          <p>1. Class diagrams should be created before use cases are considered.</p>
+          <p>1. Activity diagrams are good at showing how different actions can effect how the program will respond.</p>
           <input type="radio" id="tfBasic" name="question1" value="True"> True<br>
           <input type="radio" id="tfBasic" name="question1" value="False"> False <br>
 
@@ -43,45 +43,46 @@
           <p id="incorrectTF" name="incorrectTF"></p>
 
           <p>
-               2. Match the words below. The words below represent 5 methods, and 5 classes that should be matched
-               together based on what you know. Please answer with the format "Class Method" or else your answer
-               may be marked incorrectly.
+               2. Match the terms with the symbols used to represent them, if they were to be incorporated into an activity diagram. Please type your answers exactly.
           </p>
-          <p>Camera Bank Search Light Quiz</p>
-          <p>CheckBalance TakePhoto List Turnon Check</p>
+          <p><span>1. The plan for the day depends on the weather. <br> 2. Multiple employees work on a single fast food order. <br> 3. The completed fast food order is given to the customer. <br> 4. A list of chores tells
+          the children what they each have to do.<br> 5. The person is about to start their task. <br><br></span>
+          <span>Initial node <br> Join <br> Fork <br> Decision node <br> Swimlanes <br></span></p>
+
           1<input id="textbox" type="text" name="question2one"><br><br>
           2<input id="textbox" type="text" name="question2two"><br><br>
           3<input id="textbox" type="text" name="question2three"><br><br>
           4<input id="textbox" type="text" name="question2four"><br><br>
           5<input id="textbox" type="text" name="question2five"><br><br>
+         
 
           <p id="correctMatch"></p>
           <p id="incorrectMatch"></p>
 
-          <p>3. Choose the traits present that are bad practice in a class diagram.</p>
+          <p>3. Choose the terms that are more likely to be found in an activity diagram, not a state diagram.</p>
 
           <label class="container">
-               Every class has a specific job
+               Take a walk
                <input type="checkbox" name="question3" id="badTraitsBasic" value="1">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Class variables are private
+               Waiting for a trigger
                <input type="checkbox" name="question3" id="badTraitsBasic" value="2">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Each class has unique attributes
+               Make a transaction
                <input type="checkbox" name="question3" id="badTraitsBasic" value="3">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Repeating attributes in several class
+               Checking for valid bank information
                <input type="checkbox" name="question3" id="badTraitsBasic" value="4">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Every class connecting
+               Cancelled
                <input type="checkbox" name="question3" id="badTraitsBasic" value="5">
                <span class="checkmark"></span>
           </label>
@@ -89,7 +90,7 @@
           <p id="correctBadTraits"></p>
           <p id="incorrectBadTraits"></p>
 
-          <p>4. All nouns and verbs will be used from your use cases.</p>
+          <p>4. When a fork is used, only one of the paths is followed.</p>
           <input type="radio" id="tfBasic" name="question4" value="True"> True<br>
           <input type="radio" id="tfBasic" name="question4" value="False"> False <br>
 
@@ -97,10 +98,7 @@
           <p id="incorrectTF2" name="incorrectTF2"></p>
 
           <p>
-               5. Your client wants you to add a component into their online store. They are requesting customers
-               receive receipts in their email as customers were complaining they weren't getting them before.
-               You being a new developer in the system and not being familiar with the system; what class would
-               you create given the information?
+               5. List some actions that might be found in an activity diagram for making cookies.
           </p>
           <input id="textbox" type="text" name="question5"><br><br>
 
@@ -108,7 +106,7 @@
           <p id="incorrectScenario"></p>
 
           <br><br>
-          <center><input class="button button4" id="checkBtn" value="Check" onclick="checkAns();"></center>
+          <center><input class="button button4" id="checkBtn" value="Check" onclick="checkAns();" readonly></center>
           <br><br><br>
      </form>
 
