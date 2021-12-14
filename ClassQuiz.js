@@ -102,7 +102,7 @@ function checkAns()
   }
   else
   {
-    document.getElementById("correctScenario").innerHTML = "Correct!";
+    document.getElementById("correctScenario").innerHTML = "";
     document.getElementById("incorrectScenario").innerHTML = "Incorrect! Think about what the client wants added.";
   }
 }
