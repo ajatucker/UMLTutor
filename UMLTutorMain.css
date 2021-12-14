@@ -90,12 +90,11 @@ cursor: pointer;
 .button4 {border-radius: 8px;}
 
 .pagination {
-  padding-left: 235px;
+  padding-left: 200px;
   position: fixed;
   bottom:0;
-  overflow:hidden;
   background-color: #FFCB05;
-  width: 100%;
+  width:100%;
   cursor: pointer;
 }
 
@@ -103,7 +102,11 @@ cursor: pointer;
 .pagination a{
   float:left;
   color: #00274C;
-  padding: 8px 16px;
+  padding: 6px 10px;
+  height:auto;
+  width:auto;
+  max-height: 125px;
+  max-width:260px;
   text-decoration: none;
   text-align: center;
   display: block;
@@ -141,7 +144,7 @@ cursor: pointer;
   top: 0;
   left: 0;
   background-color: #00274C;
-  overflow-x: hidden;
+  
   padding-top: 20px;
 }
 
