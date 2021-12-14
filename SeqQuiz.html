@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML Tutor</title>
+    <link rel="stylesheet" href="UMLTutorMain.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="seqDiagramQuiz.js"></script>
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="UMLTutorMainMenu.html">Home</a>
+    <a href="UMLTutorBasics.html">UML Basics</a>
+    <a href="UMLClassDiagram.html">Class Diagram</a>
+    <a href="#use case">Use Case Diagram</a>
+    <a href="#statechart">Statechart Diagram</a>
+    <a href="#activity">Activity Diagram</a>
+    <a href="#sequence">Sequence Diagram</a>
+    <a href="#communication">Communication Diagram</a>
+    <a href="#deployment">Deployment Diagram</a>
+    <a href="UMLHelp.html">Need Help?</a>
+  </div>
+
+  <div class="main">
+    <topLine href="#UMLTutor"><center>Sequence Diagram Quiz</center></topLine><br>
+    <p> Answer the questions to the best of your ability. Below, you'll see two true or false questions,
+        a matching question, a question to choose traits of a bad class diagram, and a scenario.
+    </p>
+  </div>
+
+  <form id="quiz" name = "quiz">
+    <p>1. Sequence Diagrams should be created for a single use case.</p>
+   <input type="radio" id="tfBasic" name="question1" value="True"> True<br>
+   <input type="radio" id="tfBasic" name="question1" value="False"> False <br>
+    
+  <p id="correctTF" name = "correctTF"></p>
+  <p id="incorrectTF" name = "incorrectTF"></p>
+    
+  <p>2. Match the words below. The words represent 5 symbols. Match the first word with the second
+      to create the correct symbol name. Ex. Sequence Diagram
+  </p>
+  <p>Actor Activation Synchronous Return Control</p>
+  <p>Message Lifeline Message Lifeline Bar</p>
+  1<input id="textbox" type="text" name="question2one"><br><br>
+  2<input id="textbox" type="text" name="question2two"><br><br>
+  3<input id="textbox" type="text" name="question2three"><br><br>
+  4<input id="textbox" type="text" name="question2four"><br><br>
+  5<input id="textbox" type="text" name="question2five"><br><br>
+
+  <p id="correctMatch"></p>
+    <p id="incorrectMatch"></p>
+
+    <p>3. Choose the correct sequence diagram traits.</p>
+
+    <label class="container">Sequence Diagrams are used for multiple use cases
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">A single sequence diagram is used to represent multiple use cases
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Boundaries do not represent anything within a system
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Control symbols are all about the user
+      <input type="checkbox"  name = "question3" id="badTraitsBasic" value="4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Return messages are good practice
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="5">
+      <span class="checkmark"></span>
+    </label>
+
+    <p id="correctBadTraits"></p>
+    <p id="incorrectBadTraits"></p>
+
+    <p>4. Synchronous messages are able to be replied to instantly.</p>
+   <input type="radio" id="tfBasic" name="question4" value="True"> True<br>
+   <input type="radio" id="tfBasic" name="question4" value="False"> False <br>
+
+   <p id="correctTF2" name = "correctTF2"></p>
+  <p id="incorrectTF2" name = "incorrectTF2"></p>
+
+   <p>5. Yes or No: Does the sequence diagram represent what the system is doing with the user's input?
+   </p>
+   <input id="textbox" type="text" name="question5"><br><br>
+
+   <p id="correctScenario"></p>
+    <p id="incorrectScenario"></p>
+
+  <br><br>
+  <center><input class="button button4" id= "checkBtn" value="Check"onclick="checkAns();"></center>
+  <br><br><br>
+  </form>
+
+  <div class="pagination" id="foot">
+    <a href="SeqDiagramSymbols.html">&laquo;</a>
+    <a class="active" >Sequence Diagram Basics</a>
+    <a href="SeqDiagramSymbols.html">Sequence Diagram Symbols</a>
+    <a class="active" href="">Sequence Diagram Quiz</a>
+    <a >&raquo;</a>
+  </div>
+  </body>
+  </html> 

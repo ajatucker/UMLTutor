@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="UMLTutorMain.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="SeqDiagramQuiz.js"></script>
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="UMLTutorMainMenu.html">Home</a>
+    <a href="UMLTutorBasics.html">UML Basics</a>
+    <a href="#class">Class Diagram</a>
+    <a href="#use case">Use Case Diagram</a>
+    <a href="#statechart">Statechart Diagram</a>
+    <a href="#activity">Activity Diagram</a>
+    <a href="#sequence">Sequence Diagram</a>
+    <a href="#communication">Communication Diagram</a>
+    <a href="#deployment">Deployment Diagram</a>
+    <a href="UMLHelp.html">Need Help?</a>
+  </div>
+
+  <div class="main" id="SequenceDiagram">
+    <topLine><center>Sequence Diagram</center></topLine><br>
+    <topLine>The Basics</topLine><br>
+    <p>
+        The Sequence Diagram is most commonly used by both novice and industry professionals to model the
+        different and unique interactions between objects within a single use case. This includes both the
+        order and the how the parts of the use case interact with each other. The sequence diagram focuses on
+        the part by part execution of a use case.
+    </p>
+    <topLine>How to Create a Simple Sequence Diagram</topLine>
+    <p>
+        Sequence Diagrams range from simple to very complex, which is mainly determined by the size and scope
+        of the use case. This tutorial is going to introduce you to various parts of a sequence diagram. To
+        achieve this, we are going to walk through a simple example in order to get your feet wet within the 
+        realm of sequence diagrams.
+
+    </p>
+    <p>Sequence Diagram Example</p>
+    <p align="center">
+        This simple sequence diagram is the represention of a use case where a customer uses an ice cream
+        ordering system to order vanilla ice cream. This is after the size of the ice cream and whether it's
+        in a cup or a cone. The use case goes as follows: As a user I want to select vanilla as flavor of ice 
+        cream that I want to order.
+    </p>
+    <p align="center">
+        The example that we are going to go through is located at the bottom of the page and if you are confused
+        about any of the symbols, the next page explain each one used. To start things off, the first object we  
+        are going to cover is the dotted line under each object which is the lifeline, which shows when the 
+        object is active through out the sequence of the use case. These can get quite complicated, but we are keeping it simple.
+        The actor simply shows that this sequence diagram starts with a particular use case element. Under the actor,
+        the column present is called an activation bar which is used to indicate that an object has been instantiated to
+        be used in the use case. The solid arrow is called a synchronous message which is exactly how it sounds, each message
+        happens one right after another. Nothing else happens during these messages in the use case. The actor orders vanilla, which
+        is chosen on the interface. The symbol that the interface is represented by is a boundary, which is simply a system boundary.
+        The interface then contacts the system through another synchronous message. The system is represented by a control element, which
+        serves as a manager between boundaries and entities. The system then sends the customer entity the flavor that has been chosen.
+        The customer object is represented by an entity, which holds all of the data present with the current customer.      
+    </p>
+    <p align="center">
+        Now starts the return messages. The return message is the dotted arrow that goes back to each of the activation bars.
+        This tells the object that the object has finished the request. In this example, the customer entity tells the system 
+        that it has processed and saved the request, then the system tells the interface that the request has been fulfilled. 
+        The actor than recieves a notification confirmation that the flavor that they have selected has been recieved. This concludes 
+        this sequence diagram, please continue onto the next page to review and learn some other symbols the sequence diagram uses.
+    </p>
+    <br><br><br>
+    <topLine><center>The Vanilla Ice Cream Order Use Case Example</center></topLine><br>
+    <center>
+      <img src="example_seq.png" alt="example seq" class="image">
+      </div>
+    </div>
+  </center>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="pagination" id="foot">
+    <a>&laquo;</a>
+    <a class="active" >Sequence Diagram Basics</a>
+    <a href="SeqDiagramSymbols.html">Sequence Diagram Symbols</a>
+    <a href="SeqQuiz.html">Sequence Diagram Quiz</a>
+    <a href="SeqDiagramSymbols.html">&raquo;</a>
+  </div>
+  </body>
+  </html> 

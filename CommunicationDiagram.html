@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+    <link rel="stylesheet" href="UMLTutorMain.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="SeqDiagramQuiz.js"></script>
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="UMLTutorMainMenu.html">Home</a>
+    <a href="UMLTutorBasics.html">UML Basics</a>
+    <a href="#class">Class Diagram</a>
+    <a href="#use case">Use Case Diagram</a>
+    <a href="#statechart">Statechart Diagram</a>
+    <a href="#activity">Activity Diagram</a>
+    <a href="#sequence">Sequence Diagram</a>
+    <a href="#communication">Communication Diagram</a>
+    <a href="#deployment">Deployment Diagram</a>
+    <a href="UMLHelp.html">Need Help?</a>
+  </div>
+
+  <div class="main" id="CommDiagram">
+    <topLine><center>Communication Diagram</center></topLine><br>
+    <topLine>The Basics</topLine><br>
+    <p>
+        The Communicatio Diagram is most commonly used by both novice and industry professionals to model the
+        different interactions between objects according to space. Communication diagrams are similar to sequence
+        diagrams, however sequence diagrams arrange their objects according to time. Communication diagrams are 
+        particularly useful to determine the relationship between different objects.
+    </p>
+    <topLine>How to Create a Simple Communication Diagram</topLine>
+    <p>
+        Communication diagrams are not bound to a specific use case such as sequence diagrams. This allows communication 
+        diagrams to be used in both single and along several different use cases. In the professional industry, these diagrams
+        are used less than sequence diagrams but are no less important. Communication diagrams indicate the messages passed 
+        between objects. They are much more straight forward and simple than sequence diagrams.
+
+    </p>
+    <p>Communication Diagram Example</p>
+    <p align="center">
+        In this simple communication diagram example, we are going to use the same use case used in the sequence diagram, 
+        but this time the user is ordering chocolate ice cream as their flavor. The use case goes as follows: As a user, I would
+        like to order chocolate ice cream as my flavor of ice cream.
+    </p>
+    <p align="center">
+        The user is the customer who represents the starting point of the communication diagram example. Following the customer, the first
+        message is made to the interface which the customer orders chocolate as their flavor. The messages are all numbered to show
+        the path of the diagram. Another unique part of communcation diagrams is that the relationship messages can vary in abstraction as 
+        messages can be as broad or as specifc as you desire. Moving on to the lines that connect to each object, those are called links. They
+        represent the relationships between the objects themselves and which ones can send and recieve messages from one another. If the object 
+        sends messages to themselves, the line loops back, creating a loop, however that is not present here. The interface sends a message to the
+        system which sends the requested flavor to the customer object which saves the request for chocolate. The customer object sends a message to the 
+        system which then returns and displays on the interface that the choice of chocolate ice cream has been recieved. This examples highlights
+        the simplicity and straight forward nature of cummication diagrams. Understanding the relationship between objects is crucial, esspecially
+        when explaining the system to clients and those who have a less technical background.
+    </p>
+    
+    <br><br><br>
+    <topLine><center>The Chocolate Ice Cream Order Use Case Example</center></topLine><br>
+    <center>
+      <img src="example_comm.png" alt="example seq" class="image">
+      </div>
+    </div>
+  </center>
+  </div>
+  <br><br><br><br><br><br>
+  <div class="pagination" id="foot">
+    <a>&laquo;</a>
+    <a class="active" >Communication Diagram Basics</a>
+    <a href="CommunicationSymbols.html">Communication Diagram Symbols</a>
+    <a href="CommunicationQuiz.html">Communication Diagram Quiz</a>
+    <a href="CommunicationSymbols.html">&raquo;</a>
+  </div>
+  </body>
+  </html> 
