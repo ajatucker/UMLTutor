@@ -5,6 +5,7 @@ function checkAns()
   const question2Ans = ["device: User PC", "artifact: HTML5", "device: Database Server", "artifact: SQL database"]
   //let question3 = [];
   var question4 = document.quiz.question4.value;
+  var question5 = document.quiz.question5.value;
   
   var correct = 0;
 
