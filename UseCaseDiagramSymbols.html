@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML Tutor</title>
+    <link rel="stylesheet" href="UMLTutorMain.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="UMLTutorMainMenu.html">Home</a>
+        <a href="UMLTutorBasics.html">UML Basics</a>
+        <a href="UMLClassDiagram.html">Class Diagram</a>
+        <a href="UMLUseCaseDiagram.html">Use Case Diagram</a>
+        <a href="#statechart">Statechart Diagram</a>
+        <a href="UMLActivityDiagram.html">Activity Diagram</a>
+        <a href="SequenceDiagram.html">Sequence Diagram</a>
+        <a href="CommunicationDiagram.html">Communication Diagram</a>
+        <a href="DeploymentDiagram.html">Deployment Diagram</a>
+        <a href="UMLHelp.html">Need Help?</a>
+    </div>
+
+  <div class="main" id="Basics">
+    <topLine><center>Class Diagram Symbols</center></topLine><br>
+    <p>
+        Here is some information about the more common symbols that are used in a use case diagram.
+    </p>
+    <p>
+        Actors &ensp; <img src="UseCaseSym/UseCase-Actor.jpg">
+    </p>
+    <p>
+        Actors are people or devices that directly interact with certain functionalities of the system. 
+        Each actor has one or more goals that they wish to achieve through the system. Although actors do 
+        showcase the systems functionality, actors aren’t necessarily individual users. Actors, instead, 
+        represents a class of external entity relevant to a specific use case. Each actor can be played by 
+        multiple users, or all can be played by one.
+    </p>
+    <br>
+    <p>
+        Use Case <img src="UseCaseSym/UseCase-Use Case.jpg">
+    </p>
+    <p>
+        Use cases describe a function that a system performs to achieve an actor’s goal. They are also traceable 
+        back to a functional requirement of the system. Each use case must have a unique name that describes the 
+        action that the system performs.
+    </p> 
+    <br>   
+    <p>
+        Generalization <img src="UseCaseSym/UseCase-Generalization.jpg">
+    </p>
+    <p>
+        As described in the class diagram, generalization is used to represent inheritance. It typically starts 
+        from the child use case and points at the parent use case. There can be multiple children for a parent use case.
+    </p>
+    <br>
+    <p>
+        Association <img src="UseCaseSym/UseCase-Association.jpg">
+    </p>
+    <p>
+        Association relationships add to an existing relationship between two use cases. 
+        This means that this third class is just to add more information to their connection. A good example 
+        would be to go back to our pizza order system, and we could add an association class called "cashier"
+        this could be a handler that also prints a receipt based on the information between the two classes. 
+    </p>
+    <br>
+    <p>
+        Includes <img src="UseCaseSym/UseCase-Includes.jpg">
+    </p>
+    <p>
+        Include relationship is a relationship in which one use case explicitly includes the functionality of another use case.
+    </p>
+    <br>
+    <p>
+        Extends <img src="UseCaseSym/UseCase-Extend.jpg">
+    </p>
+    <p>
+        Extend relationship specify that one use case extends the behavior of another use case. 
+        They can represent exceptional or seldom invoked cases.
+    </p>
+    <br><br><br><br>
+    </div>
+
+
+  <div class="pagination" id="foot">
+    <a href="UMLUseCaseDiagram.html">&laquo;</a>
+    <a href="UMLUseCaseDiagram.html">Use Case Diagram Basics</a>
+    <a class="active">Use Case Diagram Symbols</a>
+    <a href="UseCaseQuiz.html">Use Case Diagram Quiz</a>
+    <a href="UseCaseQuiz.html">&raquo;</a>
+</div>
+  </body>
+  </html> 

@@ -10,10 +10,11 @@ function checkAns()
 {
   var question1 = document.quiz.question1.value;
   let question2 = [];
-  const question2Ans = ["Camera TakePhoto", "Bank CheckBalance", "List Search", "Light Turnon", "Quiz Check"]
+  const question2Ans = ["extends", "includes", "extends", "includes", "includes"]
   //let question3 = [];
   var question4 = document.quiz.question4.value;
-  var question5 = document.quiz.question5.value;
+  var question5 = document.quiz.question5.value.toLowerCase();
+  //question5 = question5.toLowerCase();
   var correct = 0;
 
   
@@ -34,7 +35,7 @@ function checkAns()
   //var question2 = document.quiz.question2.value;
   //var question3 = document.quiz.question3.value;
 
-  if(question1 == "False")
+  if(question1 == "True")
   {
     document.getElementById("correctTF").innerHTML = "Correct!";
     document.getElementById("incorrectTF").innerHTML = "";
@@ -42,19 +43,17 @@ function checkAns()
   else
   {
     document.getElementById("correctTF").innerHTML = "";
-    document.getElementById("incorrectTF").innerHTML = "Incorrect! User stories should be created first because they help define what needs to be built for the system along with requirements";
+    document.getElementById("incorrectTF").innerHTML = "Incorrect! Use case diagrams are developed early in the project because they help define the system's requirements";
   }
 
   for(var j=0; j<question2Ans.length;j++)
   {
-      for(var i = 0; i < question2.length; i++)
-    {
-      if(question2[i] == question2Ans[j])
+      if(question2[j].toLowerCase() == question2Ans[j])
       {
         correct++;
       }
     }
-  }
+
   //var checkArr = false;
   //checkArr = arraysEqual(question2, question2Ans);
   if(correct == 5)
@@ -65,7 +64,7 @@ function checkAns()
   else
   {
     document.getElementById("correctMatch").innerHTML = "";
-    document.getElementById("incorrectMatch").innerHTML = "Incorrect! Remember, objects and classes are things, and methods are what is done to them. ";
+    document.getElementById("incorrectMatch").innerHTML = "Incorrect! Try thinking of inludes as nessecary functionality and extends as additional functionality.";
   }
 
   const question3 = document.querySelectorAll('input[name="question3"]:checked');
@@ -73,7 +72,7 @@ function checkAns()
   question3.forEach((checkbox) => {
     userAns3.push(checkbox.value);
     });
-  if(userAns3[0] == "4" && userAns3[1] == "5")
+  if(userAns3[0] == "3" && userAns3[1] == "5")
   {
     document.getElementById("correctBadTraits").innerHTML = "Correct!";
     document.getElementById("incorrectBadTraits").innerHTML = "";
@@ -81,7 +80,7 @@ function checkAns()
   else
   {
     document.getElementById("correctBadTraits").innerHTML = "";
-    document.getElementById("incorrectBadTraits").innerHTML = "Incorrect! Remember, every class should be well defined, and this includes limiting links to other classes.";
+    document.getElementById("incorrectBadTraits").innerHTML = "Incorrect! Recall Use Case Diagram Symbols.";
   }
 
   if(question4 == "False")
@@ -92,10 +91,10 @@ function checkAns()
   else
   {
     document.getElementById("correctTF2").innerHTML = "";
-    document.getElementById("incorrectTF2").innerHTML = "Incorrect! Remember, some words will be used as attributes of your class.";
+    document.getElementById("incorrectTF2").innerHTML = "Incorrect! Remember, actors represents a class of external entity.";
   }
 
-  if(question5 == "receipt")
+  if(question5 == "use case" || question5 == "use cases")
   {
     document.getElementById("correctScenario").innerHTML = "Correct!";
     document.getElementById("incorrectScenario").innerHTML = "";
@@ -103,7 +102,7 @@ function checkAns()
   else
   {
     document.getElementById("correctScenario").innerHTML = "";
-    document.getElementById("incorrectScenario").innerHTML = "Incorrect! Think about what the client wants added.";
+    document.getElementById("incorrectScenario").innerHTML = "Incorrect! What defines the functionality of a system and can show the steps taken when processing a function?";
   }
 }
 /*
