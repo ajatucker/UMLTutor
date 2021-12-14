@@ -28,24 +28,27 @@
           <topLine><center>Activity Diagram</center></topLine><br>
           <topLine>The Basics</topLine><br>
           <p>
-               While in a <a href="#statechart"><b>statechart diagram</b></a>, the flow of control is visualized from state to state, in an <b>activity diagram</b>,
-               the flow of control is visualized from activity to activity.
-               An activity diagram shows a series of actions that have to be followed before the software component in question can meet its intended goal.
-               This means that often a path in the diagram will split into 2
-               or more paths, because an action might have more than one outcome. Tangible states are viewed more retroactively, while activites are grounded in the present.
-               Activity diagrams might use states as a way to differentiate between paths, as consequences to actions taken.
-               <br><br>
-               Actors are not as important in activity diagrams as in other diagrams, however there are ways to show which action belongs to whom using <b>swimlanes</b>, which will be further explained
-               in the <a href="ActivityDiagramSymbols.html"><b>symbols</b></a> section.
+               A statechart diagram tracks the different states that the program can be in, and how each state changes from one to the next. States usually change via <b>trigger event</b>s, which are labeled next to the
+               arrows between states. Most states exist as some form of "waiting state," where the state of the object is to wait for some trigger event that will bring it into the next state. <b>Passive states</b> are 
+               object states that are not currently in transition. The state is represented by the current values attributed to the object. <b>Active state</b>s, on the other hand are states that are actively transitioning,
+               and require an event in order to bring them from one active state to another. 
+               Some states, "Activity states," are listed with "do-actions," which are special actions that are performed while an object is in that state. When the action is finished, the state will act like a normal "waiting state."
+               Some state transitions happen without a trigger event at all, however, and they will switch from one state to the next on their own. An activity state that doesn't require a trigger to transition
+               will transition after its "do-activity" is finished.
+               
+               Actions and guards are associated with events. Actions are special requirements that need to be done concurrently by the object with the event or because of the event. A gurad is a boolean condition
+               that must be met in order to continue with the transition.'
+
           </p>
-          <topLine>When should I use an activity diagram?</topLine><br>
+          <topLine>Why should I use a state diagram?</topLine><br>
           <div style="height: 30%;">
-               <img src="DogImageUnsplash.jpg" align="left" class="sidebyside" style="float:left; margin-left: 5%; width:30%;">
+               <img src="phone.jpg" align="left" class="sidebyside" style="float:left; margin-left: 5%; width:30%;">
                <p>
                <p class="sidebyside" style="float:right; margin-right: 10%; max-height: 40%;">
                     <br><br>
-                    You can use an activity diagram to show any task that a user might want to accomplish while using your software! All UML diagrams can be helpful in further explaining how you want your
-                    software to function. <br> However, it might be especially helpful to use an activity diagram when there could be several outcomes to an action, or where something is likely to not go as intended.
+                    State diagrams are helpful with avoiding errors because they map out every state the object in question can be in based on the trigger events they
+                    may encounter. This may allow you to plan and block certain events from happening, and stop you from missing an action that may lead to 
+                    unexpected consequenses before coding begins.
                     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <!-- brb screaming crying throwing up-->
                </p>
