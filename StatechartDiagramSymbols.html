@@ -7,7 +7,6 @@
      <title>UML Tutor</title>
      <link rel="stylesheet" href="UMLTutorMain.css">
      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-     <script src="ActivityQuiz.js"></script>
 </head>
 <body>
 
@@ -25,55 +24,45 @@
      </div>
 
      <div class="main" id="Basics">
-          <topLine><center>Activity Diagram</center></topLine><br>
-          <topLine>The Basics</topLine><br>
+          <topLine><center>Activity Diagram Symbols</center></topLine><br>
+
+          <p>There are only a few UML symbols associated with activity diagrams.<br><br></p>
+
           <p>
-               While in a <a href="#statechart"><b>statechart diagram</b></a>, the flow of control is visualized from state to state, in an <b>activity diagram</b>,
-               the flow of control is visualized from activity to activity.
-               An activity diagram shows a series of actions that have to be followed before the software component in question can meet its intended goal.
-               This means that often a path in the diagram will split into 2
-               or more paths, because an action might have more than one outcome. Tangible states are viewed more retroactively, while activites are grounded in the present.
-               Activity diagrams might use states as a way to differentiate between paths, as consequences to actions taken.
-               <br><br>
-               Actors are not as important in activity diagrams as in other diagrams, however there are ways to show which action belongs to whom using <b>swimlanes</b>, which will be further explained
-               in the <a href="ActivityDiagramSymbols.html"><b>symbols</b></a> section.
+               <img src="initialnode.jpg" width="100" style="padding-right: 50px;">
+               <span style="display: inline-block;">There is the <b>“initial pseudostate</b>, represented by a solid black circle. This isn't really a state in iteself, and it 
+               marks the start of the state diagram, where all states will stem from.<br><br></span>
           </p>
-          <topLine>When should I use an activity diagram?</topLine><br>
-          <div style="height: 30%;">
-               <img src="DogImageUnsplash.jpg" align="left" class="sidebyside" style="float:left; margin-left: 5%; width:30%;">
-               <p>
-               <p class="sidebyside" style="float:right; margin-right: 10%; max-height: 40%;">
-                    <br><br>
-                    You can use an activity diagram to show any task that a user might want to accomplish while using your software! All UML diagrams can be helpful in further explaining how you want your
-                    software to function. <br> However, it might be especially helpful to use an activity diagram when there could be several outcomes to an action, or where something is likely to not go as intended.
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <!-- brb screaming crying throwing up-->
-               </p>
-          </div>
-          <div>
-               <p align="center" style="text-align: center; padding-top: 25%; padding-bottom: 0px;">The Dog Wash Example</p>
-               <p style="float:left; max-height: 40%; display: inline-block; width: 40%; padding-left:12.5%; padding-right: 0%">
-                    When washing a dog, there aren't that many steps, however there is still a lot that can go wrong.<br>
-                    In this example, one must first turn on the water to warm up, and then look for the dog. (Who is probably hiding after hearing the water) This brings us to our first decision node,
-                    where the dog is either found, or not found. If the dog is not found, our diagram states they must look again. However in another diagram, one might have that lead to the action "give up." <br>
-                    Once the dog is found, catching him is another story. When he is eventually found and caught, however, then multiple actions can be taken at the same time in order to wash the dog. Then, as a joint effort, the dog
-                    can be dried and once again be set free.
-               </p>
+          
+          <p>
+               <img src="arrow.jpg" width="100" style="padding-right: 50px;">
+               <span style="display: inline-block;">Next there are <b>arrows</b>, which show the transitions connecting states. Optionally, they can be
+               labeled with trigger events, actions, and or guards.<br><br></span>
+</p>
 
-               <img src="Activity1.jpg" align="right" style="float:right; display:inline-block; margin-left: 5%; width:25%; padding-bottom: 10%; padding-right: 13%; margin-top: -9%;">
-          </div>
+          <p>
+               <img src="state2.jpg" width="100" style="padding-right: 50px;">
+               <span style="display: inline-block;">Then, there are the <b>state node</b>s themselves, represented by rounded rectangles labeled with their respective states.
+               Optionally, the second half of the state node can be filled with the "do-activity" for activity states.<br><br></span>
+</p>
+          <p>
 
-          <br><br><br>
-
+               <img src="finalnode.jpg" width="100" style="padding-right: 50px;">
+               <span style="display: inline-block;">
+                    Finally, the <b>final node</b> is a solid black circle outlined with a black ring, and that marks the end of the state diagram. There are no more transitions available at this point. 
+                    By then, the process should have reached an expected conclusion.<br><br>
+               </span>
+          </p>
+          
+          <br>
+          <br><br><br><br>
      </div>
-     <br><br><br><br><br><br>
-          <div class="pagination" id="foot">
-               <a>&laquo;</a>
-               <a href="UMLStatechartDiagram.html">&laquo;</a>
-               <a href="UMLStatechartDiagram.html">Statechart Diagram Basics</a>
-               <a class="active">Statechart Diagram Symbols</a>
-               <a href="StatechartQuiz.html">Statechart Diagram Quiz</a>
-               <a href="StatechartQuiz.html">&raquo;</a>
-          </div>
+     <div class="pagination" id="foot">
+          <a href="UMLStatechartDiagram.html">&laquo;</a>
+          <a href="UMLStatechartDiagram.html">Statechart Diagram Basics</a>
+          <a class="active">Statechart Diagram Symbols</a>
+          <a href="StatechartQuiz.html">Statechart Diagram Quiz</a>
+          <a href="StatechartQuiz.html">&raquo;</a>
+     </div>
 </body>
 </html> 

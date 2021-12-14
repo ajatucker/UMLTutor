@@ -7,7 +7,7 @@
      <title>UML Tutor</title>
      <link rel="stylesheet" href="UMLTutorMain.css">
      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-     <script src="ActivityQuiz.js"></script>
+     <script src="StatechartQuiz.js"></script>
 </head>
 <body>
 
@@ -28,14 +28,13 @@
           <topLine href="#UMLTutor"><center>Statechart Diagram Quiz</center></topLine><br>
           <p>
                Answer the questions to the best of your ability. Below, you'll see two true or false questions,
-               a matching question, a question to choose traits of a bad class diagram, and a scenario.
-
-               <br><b>(I totally just copied and pasted the Class Quiz page as a placeholder for now.)</b>
+               a matching question, a question to choose elements of a state diagram, and a scenario.
           </p>
      </div>
 
+     
      <form id="quiz" name="quiz">
-          <p>1. Class diagrams should be created before use cases are considered.</p>
+          <p>1. A trigger event required for a transition to occur.</p>
           <input type="radio" id="tfBasic" name="question1" value="True"> True<br>
           <input type="radio" id="tfBasic" name="question1" value="False"> False <br>
 
@@ -43,45 +42,49 @@
           <p id="incorrectTF" name="incorrectTF"></p>
 
           <p>
-               2. Match the words below. The words below represent 5 methods, and 5 classes that should be matched
-               together based on what you know. Please answer with the format "Class Method" or else your answer
-               may be marked incorrectly.
+               2. Match the terms with the right classification for a state diagram. Please type your answers exactly, and list events in numerical order.
           </p>
-          <p>Camera Bank Search Light Quiz</p>
-          <p>CheckBalance TakePhoto List Turnon Check</p>
+          <p>
+               <span>
+                    1. Capacity == full? <br> 2. Increment attempts by one <br> 3. Information is correct <br> 4. User submits <br> 5. Coupon is entered <br><br>
+               </span>
+               <span> Action <br> Event1 <br> Event2 <br>Event3 <br> Guard <br></span>
+          </p>
+
           1<input id="textbox" type="text" name="question2one"><br><br>
           2<input id="textbox" type="text" name="question2two"><br><br>
           3<input id="textbox" type="text" name="question2three"><br><br>
           4<input id="textbox" type="text" name="question2four"><br><br>
           5<input id="textbox" type="text" name="question2five"><br><br>
 
+
           <p id="correctMatch"></p>
           <p id="incorrectMatch"></p>
 
-          <p>3. Choose the traits present that are bad practice in a class diagram.</p>
+          <p>3. Choose the terms that are found in a state diagram.</p>
 
           <label class="container">
-               Every class has a specific job
+               Initial node
                <input type="checkbox" name="question3" id="badTraitsBasic" value="1">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Class variables are private
+               Initial pseudostate
                <input type="checkbox" name="question3" id="badTraitsBasic" value="2">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Each class has unique attributes
+               Action
                <input type="checkbox" name="question3" id="badTraitsBasic" value="3">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Repeating attributes in several class
+               Guard
                <input type="checkbox" name="question3" id="badTraitsBasic" value="4">
                <span class="checkmark"></span>
           </label>
           <label class="container">
-               Every class connecting
+               Trigger event
                <input type="checkbox" name="question3" id="badTraitsBasic" value="5">
                <span class="checkmark"></span>
           </label>
@@ -89,7 +92,7 @@
           <p id="correctBadTraits"></p>
           <p id="incorrectBadTraits"></p>
 
-          <p>4. All nouns and verbs will be used from your use cases.</p>
+          <p>4. A "do-activity" must be listed along with a state, even if it is not an activity state.</p>
           <input type="radio" id="tfBasic" name="question4" value="True"> True<br>
           <input type="radio" id="tfBasic" name="question4" value="False"> False <br>
 
@@ -97,10 +100,7 @@
           <p id="incorrectTF2" name="incorrectTF2"></p>
 
           <p>
-               5. Your client wants you to add a component into their online store. They are requesting customers
-               receive receipts in their email as customers were complaining they weren't getting them before.
-               You being a new developer in the system and not being familiar with the system; what class would
-               you create given the information?
+               5. List some actions that might be found in an state diagram for requesting a ride on a rideshare app.
           </p>
           <input id="textbox" type="text" name="question5"><br><br>
 
@@ -108,7 +108,7 @@
           <p id="incorrectScenario"></p>
 
           <br><br>
-          <center><input class="button button4" id="checkBtn" value="Check" onclick="checkAns();"></center>
+          <center><input class="button button4" id="checkBtn" value="Check" onclick="checkAns();" readonly></center>
           <br><br><br>
      </form>
 

@@ -32,11 +32,11 @@
                arrows between states. Most states exist as some form of "waiting state," where the state of the object is to wait for some trigger event that will bring it into the next state. <b>Passive states</b> are 
                object states that are not currently in transition. The state is represented by the current values attributed to the object. <b>Active state</b>s, on the other hand are states that are actively transitioning,
                and require an event in order to bring them from one active state to another. 
-               Some states, "Activity states," are listed with "do-actions," which are special actions that are performed while an object is in that state. When the action is finished, the state will act like a normal "waiting state."
+               Some states, "<b>Activity state</b>s," are listed with "do-activities," which are special actions that are performed while an object is in that state. When the action is finished, the state will act like a normal "waiting state."
                Some state transitions happen without a trigger event at all, however, and they will switch from one state to the next on their own. An activity state that doesn't require a trigger to transition
                will transition after its "do-activity" is finished.
                
-               Actions and guards are associated with events. Actions are special requirements that need to be done concurrently by the object with the event or because of the event. A gurad is a boolean condition
+               <b>Actions</b> and <b>guards</b> are associated with events. Actions are special requirements that need to be done concurrently by the object with the event or because of the event. A gurad is a boolean condition
                that must be met in order to continue with the transition.'
 
           </p>
@@ -54,16 +54,16 @@
                </p>
           </div>
           <div>
-               <p align="center" style="text-align: center; padding-top: 25%; padding-bottom: 0px;">The Dog Wash Example</p>
+               <p align="center" style="text-align: center; padding-top: 25%; padding-bottom: 0px;">The Login Example</p>
                <p style="float:left; max-height: 40%; display: inline-block; width: 40%; padding-left:12.5%; padding-right: 0%">
-                    When washing a dog, there aren't that many steps, however there is still a lot that can go wrong.<br>
-                    In this example, one must first turn on the water to warm up, and then look for the dog. (Who is probably hiding after hearing the water) This brings us to our first decision node,
-                    where the dog is either found, or not found. If the dog is not found, our diagram states they must look again. However in another diagram, one might have that lead to the action "give up." <br>
-                    Once the dog is found, catching him is another story. When he is eventually found and caught, however, then multiple actions can be taken at the same time in order to wash the dog. Then, as a joint effort, the dog
-                    can be dried and once again be set free.
+                    When logging in to an account, it's important to make sure there are no unexpected errors. This state diagram starts by waiting for the user's input. In this state,
+                    input is still being accepted. Then, after the user presses the 'login' button, the login event has been triggered, and the object moves into the next state to see if
+                    the username and password match the record. In this state, no changes to the login information is allowed. If the username is wrong, a message will be given to the user. If the password is wrong, the account will instantly be locked.
+                    (Not the most friendly solution, but a secure one!) If both are correct, the user will be logged in. The object will also send a message to the email associated with
+                    the account.
                </p>
 
-               <img src="Activity1.jpg" align="right" style="float:right; display:inline-block; margin-left: 5%; width:25%; padding-bottom: 10%; padding-right: 13%; margin-top: -9%;">
+               <img src="State1.jpg" align="right" style="float:right; display:inline-block; margin-left: 5%; width:25%; padding-bottom: 10%; padding-right: 13%; margin-top: -9%;">
           </div>
 
           <br><br><br>
