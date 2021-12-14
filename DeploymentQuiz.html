@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML Tutor</title>
+    <link rel="stylesheet" href="UMLTutorMain.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="DeploymentQuiz.js"></script>
+</head>
+<body>
+
+    <div class="sidenav">
+        <a href="UMLTutorMainMenu.html">Home</a>
+        <a href="UMLTutorBasics.html">UML Basics</a>
+        <a href="UMLClassDiagram.html">Class Diagram</a>
+        <a href="UMLUseCaseDiagram.html">Use Case Diagram</a>
+        <a href="#statechart">Statechart Diagram</a>
+        <a href="UMLActivityDiagram.html">Activity Diagram</a>
+        <a href="SequenceDiagram.html">Sequence Diagram</a>
+        <a href="CommunicationDiagram.html">Communication Diagram</a>
+        <a href="DeploymentDiagram.html">Deployment Diagram</a>
+        <a href="UMLHelp.html">Need Help?</a>
+      </div>
+    
+
+  <div class="main">
+    <topLine href="#DeploymentQuiz"><center>Basics Quiz</center></topLine><br>
+    <p> Answer the questions to the best of your ability. Below, you'll see two true or false questions,
+        a matching question, a question to choose traits of a bad deployment diagram, and a scenario.
+    </p>
+  </div>
+
+  <form id="quiz" name = "quiz">
+    <p>1. Deployment diagrams shows the static structure of a software development.</p>
+   <input type="radio" id="tfBasic" name="question1" value="True"> True<br>
+   <input type="radio" id="tfBasic" name="question1" value="False"> False <br>
+    
+  <p id="correctTF" name = "correctTF"></p>
+  <p id="incorrectTF" name = "incorrectTF"></p>
+    
+  <p>2. Match the words below. The words below represent 4 devices with 4 artifacts that should be matched
+      together based on what you know. Start from the basic and work your way up. These will need to be in
+      order to get the right answer.
+  </p>
+  <p>Standard Diagram of Website Quiz</p>
+  <p>device: User PC, artifact: SQL database, artifact: HTML5, device: Database Server </p>
+  1<input id="textbox" type="text" name="question2one"><br><br>
+  2<input id="textbox" type="text" name="question2two"><br><br>
+  3<input id="textbox" type="text" name="question2three"><br><br>
+  4<input id="textbox" type="text" name="question2four"><br><br>
+ 
+
+  <p id="correctMatch"></p>
+    <p id="incorrectMatch"></p>
+
+    <p>3. who should use a deployment diagram?</p>
+
+    <label class="container">Business Analyst
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">CEO
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Network Engineer
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Customer
+      <input type="checkbox"  name = "question3" id="badTraitsBasic" value="4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">System Administrators
+      <input type="checkbox" name = "question3" id="badTraitsBasic" value="5">
+      <span class="checkmark"></span>
+    </label>
+
+    <p id="correctBadTraits"></p>
+    <p id="incorrectBadTraits"></p>
+
+    <p>4. The artifacts that should be identified before drawing a deployment diagram is nodes, relationships between nodes, and execution environments. </p>
+   <input type="radio" id="tfBasic" name="question4" value="True"> True<br>
+   <input type="radio" id="tfBasic" name="question4" value="False"> False <br>
+
+   <p id="correctTF2" name = "correctTF2"></p>
+  <p id="incorrectTF2" name = "incorrectTF2"></p>
+
+   <p>5. Your client, Chatbook wants you to add a web server along with a database. The client wants all the comments 
+       saved on to a database in the company made social media. What diagram element will you need to do 
+       to connect the web server and database?
+   </p>
+   <input id="textbox" type="text" name="question5"><br><br>
+
+   <p id="correctScenario"></p>
+    <p id="incorrectScenario"></p>
+
+  <br><br>
+  <center><input class="button button4" id= "checkBtn" value="Check"onclick="checkAns();"></center>
+  <br><br><br>
+  </form>
+
+  <div class="pagination" id="foot">
+    <a href="DeploymentDiagramSymbols.html">&laquo;</a>
+    <a href="DeploymentDiagram.html">Deployment Diagram Basics</a>
+    <a href="DeploymentDiagramSymbols.html">Deployment Diagram Symbols</a>
+    <a class="active" href="">Deployment Diagram Quiz</a>
+    <a >&raquo;</a>
+  </div>
+  </body>
+  </html> 
