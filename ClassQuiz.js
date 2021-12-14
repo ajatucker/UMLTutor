@@ -37,9 +37,11 @@ function checkAns()
   if(question1 == "False")
   {
     document.getElementById("correctTF").innerHTML = "Correct!";
+    document.getElementById("incorrectTF").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctTF").innerHTML = "";
     document.getElementById("incorrectTF").innerHTML = "Incorrect! User stories should be created first because they help define what needs to be built for the system along with requirements";
   }
 
@@ -58,9 +60,11 @@ function checkAns()
   if(correct == 5)
   {
     document.getElementById("correctMatch").innerHTML = "Correct!";
+    document.getElementById("incorrectMatch").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctMatch").innerHTML = "";
     document.getElementById("incorrectMatch").innerHTML = "Incorrect! Remember, objects and classes are things, and methods are what is done to them. ";
   }
 
@@ -72,27 +76,33 @@ function checkAns()
   if(userAns3[0] == "4" && userAns3[1] == "5")
   {
     document.getElementById("correctBadTraits").innerHTML = "Correct!";
+    document.getElementById("incorrectBadTraits").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctBadTraits").innerHTML = "";
     document.getElementById("incorrectBadTraits").innerHTML = "Incorrect! Remember, every class should be well defined, and this includes limiting links to other classes.";
   }
 
   if(question4 == "False")
   {
     document.getElementById("correctTF2").innerHTML = "Correct!";
+    document.getElementById("incorrectTF2").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctTF2").innerHTML = "";
     document.getElementById("incorrectTF2").innerHTML = "Incorrect! Remember, some words will be used as attributes of your class.";
   }
 
   if(question5 == "receipt")
   {
     document.getElementById("correctScenario").innerHTML = "Correct!";
+    document.getElementById("incorrectScenario").innerHTML = "";
   }
   else
   {
+    document.getElementById("correctScenario").innerHTML = "Correct!";
     document.getElementById("incorrectScenario").innerHTML = "Incorrect! Think about what the client wants added.";
   }
 }
